@@ -1,5 +1,14 @@
 import React from "react";
 
 export default function Skills() {
-  return <h1>Skills</h1>;
+  return (
+    <section className="w-[1000px] m-auto">
+      <ul>
+        <li>
+          <i className="aboba"></i>
+          <p>123</p>
+        </li>
+      </ul>
+    </section>
+  );
 }

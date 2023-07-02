@@ -13,11 +13,11 @@ export default function HeaderContent() {
         animate={{ x: 0,  WebkitBorderTopLeftRadius: "100px" }}
         className="bg-[#BC986A] h-[500px] rounded-tl-[100px] shadow-lg rounded-md w-[70%] p-10 items-center flex gap-20 justify-between"
       >
-        <div>
+        <div className="flex flex-col">
           <h1 className="text-[44px] mb-5 font-[Montserrat] text-[#524217] font-semibold">
             Danila Boltach
           </h1>
-          <motion.h1 className="text-[40px] tracking-normal font-[Montserrat] leading-9 max-w-[500px] h-[150px] text-[#52421796] font-semibold">
+          <motion.h1 className="text-[40px] tracking-tighter font-[Montserrat] leading-9 max-w-[500px] h-[150px] text-[#52421796] font-semibold">
             <Typewriter
               // options={{ loop: true }}
               options={{ cursor: "", deleteSpeed: 0.1, delay: 30 }}
