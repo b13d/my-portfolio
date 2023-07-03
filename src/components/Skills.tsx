@@ -40,9 +40,9 @@ export default function Skills() {
       initial={{ y: 200 }}
       whileInView={{ y: 0 }}
       viewport={{ once: true }}
-      className="w-[1000px] m-auto"
+      className="max-w-[1000px] m-auto max-sm:px-4"
     >
-      <h1 className="text-[50px] font-[Montserrat] mt-5 text-[#bb9a60] font-bold text-center">
+      <h1 className="text-[50px] font-[Montserrat] mt-5 text-[#bb9a60] max-sm:text-[40px] font-bold text-center">
         Technical Skills
       </h1>
       <ul className="flex justify-center my-5 gap-5 flex-wrap">
@@ -59,10 +59,19 @@ export default function Skills() {
                 whileInView="visibile"
                 viewport={{ once: true }}
                 src={`/images/${imageSkills[index]}`}
-                className="w-[100px]"
+                className="max-sm:w-[75px] w-[100px]"
                 alt="logo"
               />
-              <p className="font-semibold text-[18px]">{namesSkills[index]}</p>
+              <motion.p
+                custom={index}
+                variants={variants}
+                initial={{ opacity: 0 }}
+                whileInView="visibile"
+                viewport={{ once: true }}
+                className="font-semibold text-[18px]"
+              >
+                {namesSkills[index]}
+              </motion.p>
             </li>
           );
         })}

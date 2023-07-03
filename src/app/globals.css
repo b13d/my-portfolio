@@ -3,7 +3,3 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=Montserrat:wght@500;600&display=swap');
-
-.aboba::before {
-  content: "\f077";
-}
