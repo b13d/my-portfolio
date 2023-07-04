@@ -77,7 +77,7 @@ export default function Portfolio() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, x: 0 }}
+                initial={{ opacity: 0,x: index % 2 === 0 ? 800 : -800 }}
                 whileInView={{ opacity: 1, x: index % 2 === 0 ? 400 : -400 }}
                 viewport={{ once: true }}
                 transition={{ type: "tween", duration: 1 }}

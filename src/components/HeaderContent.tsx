@@ -12,7 +12,7 @@ export default function HeaderContent() {
   return (
     <section className="flex flex-col items-center justify-center">
       <motion.div
-        initial={{ x: -800, WebkitBorderTopLeftRadius: "6px" }}
+        initial={{ x: -1200, WebkitBorderTopLeftRadius: "6px" }}
         animate={{ x: 0, WebkitBorderTopLeftRadius: "100px" }}
         className=" sm:h-[500px] rounded-tl-[100px] max-sm:gap-0 max-lg:flex-col shadow-md rounded-md sm:w-[70%] p-10 items-center flex lg:gap-20 max-lg:justify-normal max-lg:gap-5 justify-between"
       >
@@ -55,7 +55,7 @@ export default function HeaderContent() {
           </div>
         </div>
         <motion.img
-          initial={{ x: 1600 }}
+          initial={{ x: 2000 }}
           animate={{ x: 0 }}
           className="rounded-lg max-lg:w-[150px] max-lg:mt-8 relative shadow-[15px_15px_0px_0px_#090c10] "
           src="/images/photo.png"
