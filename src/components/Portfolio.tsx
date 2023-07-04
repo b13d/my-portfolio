@@ -46,7 +46,7 @@ export default function Portfolio() {
         return (
           <motion.div
             custom={index}
-            className={`max-sm:w-auto w-[400px] shadow-xl duration-1000 ${
+            className={`max-sm:w-auto w-[400px]  duration-1000 ${
               index % 2 === 0 ? "" : "sm:ml-auto"
             }`}
             key={index}
@@ -61,7 +61,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
-                className={`w-[400px] rounded-lg brightness-90`}
+                className={`w-[400px] rounded-lg brightness-90 shadow-xl`}
                 src={`/images/${value}`}
                 alt="screen-site"
               />

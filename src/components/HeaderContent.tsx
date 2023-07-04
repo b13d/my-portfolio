@@ -14,7 +14,7 @@ export default function HeaderContent() {
       <motion.div
         initial={{ x: -1200, WebkitBorderTopLeftRadius: "6px" }}
         animate={{ x: 0, WebkitBorderTopLeftRadius: "100px" }}
-        className=" sm:h-[500px] rounded-tl-[100px] max-sm:gap-0 max-lg:flex-col shadow-md rounded-md sm:w-[70%] p-10 items-center flex lg:gap-20 max-lg:justify-normal max-lg:gap-5 justify-between"
+        className=" sm:h-[500px] rounded-tl-[100px] max-sm:gap-0 max-lg:flex-col shadow-[0px_0px_4px_0px_#0000009e] rounded-md sm:w-[70%] p-10 items-center flex lg:gap-20 max-lg:justify-normal max-lg:gap-5 justify-between"
       >
         <h1
           className={`text-[44px] lg:hidden max-lg:text-[30px]   ${poppins.className} bg-gradient-to-r from-[#693fff] to-[fuchsia] bg-clip-text text-transparent font-semibold`}
