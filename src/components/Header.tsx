@@ -10,7 +10,7 @@ export default function Header() {
       initial={{ y: -200 }}
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
-      className="flex justify-center items-center my-2"
+      className="flex justify-center items-center my-3"
     >
       <Link href="/">
         <img src="/images/logo.png" alt="logo" />

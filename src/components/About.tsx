@@ -9,9 +9,9 @@ export default function About() {
       whileInView={{ y: 0 }}
       initial={{ y: 300 }}
       viewport={{ once: true }}
-      className="flex flex-col gap-10 max-w-[600px] m-auto max-sm:px-4"
+      className="flex flex-col gap-3 sm:gap-10 max-w-[600px] m-auto max-sm:px-4"
     >
-      <h1 className="text-[50px] max-lg:text-[40px] font-[Montserrat] mt-5 text-[#bb9a60] font-bold text-center">
+      <h1 className="text-[50px] max-lg:text-[40px] max-sm:mt-[12px] font-[Montserrat] sm:mt-5 text-[#bb9a60] font-bold text-center">
         About me
       </h1>
       <p className="text-justify text-[#2C3E50] text-[20px] max-sm:text-[16px]">

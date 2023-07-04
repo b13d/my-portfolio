@@ -11,7 +11,7 @@ export default function HeaderContent() {
       <motion.div
         initial={{ x: -200, WebkitBorderTopLeftRadius: "6px" }}
         animate={{ x: 0, WebkitBorderTopLeftRadius: "100px" }}
-        className="bg-[#BC986A] h-[500px] rounded-tl-[100px] max-sm:gap-0 max-lg:flex-col shadow-lg rounded-md sm:w-[70%] p-10 items-center flex lg:gap-20 max-lg:justify-normal max-lg:gap-5 justify-between"
+        className="bg-[#BC986A] sm:h-[500px] rounded-tl-[100px] max-sm:gap-0 max-lg:flex-col shadow-lg rounded-md sm:w-[70%] p-10 items-center flex lg:gap-20 max-lg:justify-normal max-lg:gap-5 justify-between"
       >
         <h1 className="text-[44px] lg:hidden max-lg:text-[30px]  lg:mb-5 font-[Montserrat] text-[#524217] font-semibold">
           Danila Boltach

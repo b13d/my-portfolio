@@ -45,7 +45,7 @@ export default function Skills() {
       <h1 className="text-[50px] font-[Montserrat] mt-5 text-[#bb9a60] max-sm:text-[40px] font-bold text-center">
         Technical Skills
       </h1>
-      <ul className="flex justify-center my-5 gap-5 flex-wrap">
+      <ul className="flex justify-center my-5 gap-5 flex-wrap items-baseline">
         {namesSkills.map((value, index) => {
           return (
             <li

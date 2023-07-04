@@ -35,7 +35,7 @@ export default function Portfolio() {
       animate={{ y: 0 }}
       className="max-w-[1000px] max-sm:px-4 m-auto max-[800px]:flex max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-5 max-[800px]:justify-center"
     >
-      <h1 className="text-[50px] mb-10 font-[Montserrat] max-sm:text-[40px] mt-5 text-[#bb9a60] font-bold text-center">
+      <h1 className="text-[50px] sm:mb-10 font-[Montserrat] max-sm:text-[40px] sm:mt-5 text-[#bb9a60] font-bold text-center">
         Portfolio
       </h1>
       {imagePortfolio.map((value, index) => {
@@ -43,7 +43,7 @@ export default function Portfolio() {
           <motion.div
             custom={index}
             className={`max-sm:w-auto w-[400px] shadow-xl duration-1000 ${
-              index % 2 === 0 ? "" : "ml-auto"
+              index % 2 === 0 ? "" : "min-[800px]:ml-auto"
             }`}
             key={index}
           >
@@ -61,7 +61,7 @@ export default function Portfolio() {
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
                 whileTap={{ opacity: 1 }}
-                className="w-full h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex flex-col items-center justify-center text-justify bg-[#00000077]"
+                className="w-full h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex flex-col items-center justify-center text-justify bg-[#000000ad]"
               >
                 <h1 className="text-[#f7c877] max-sm:text-[12px] font-semibold">
                   {arrDescriptions[index]}
