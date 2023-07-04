@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Poppins } from "next/font/google";
+const poppins = Poppins({ weight: "800", subsets: ["devanagari"] });
 
 export default function Skills() {
   const namesSkills: string[] = [
@@ -20,11 +22,11 @@ export default function Skills() {
     "html.png",
     "css-3.png",
     "sass.png",
-    "java-script.png",
+    "javascript.png",
     "typescript.png",
     "git.png",
     "github.png",
-    "atom.png",
+    "react.png",
     "Nextjs-logo.png",
   ];
 
@@ -42,7 +44,9 @@ export default function Skills() {
       viewport={{ once: true }}
       className="max-w-[1000px] m-auto max-sm:px-4"
     >
-      <h1 className="text-[50px] font-[Montserrat] mt-5 text-[#bb9a60] max-sm:text-[40px] font-bold text-center">
+      <h1
+        className={`text-[50px]  mt-5 bg-gradient-to-r to-[#267ee2] from:60% to:40% from-[#7c2efa] ${poppins.className} bg-clip-text text-transparent max-sm:text-[40px] font-bold text-center`}
+      >
         Technical Skills
       </h1>
       <ul className="flex justify-center my-5 gap-5 flex-wrap items-baseline">
@@ -59,7 +63,7 @@ export default function Skills() {
                 whileInView="visibile"
                 viewport={{ once: true }}
                 src={`/images/${imageSkills[index]}`}
-                className="max-sm:w-[75px] w-[100px]"
+                className={`max-sm:w-[75px] w-[100px]`}
                 alt="logo"
               />
               <motion.p
@@ -68,7 +72,7 @@ export default function Skills() {
                 initial={{ opacity: 0 }}
                 whileInView="visibile"
                 viewport={{ once: true }}
-                className="font-semibold text-[18px]"
+                className="font-semibold text-[18px] text-[#A3B3BC]"
               >
                 {namesSkills[index]}
               </motion.p>
