@@ -66,7 +66,7 @@ export default function Portfolio() {
               <motion.img
                 initial={{ opacity: 0, x: index % 2 === 0 ? 200 : -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                // viewport={{ once: true }}
                 transition={{ duration: 1 }}
                 className={`w-[400px] rounded-lg brightness-90 shadow-xl`}
                 src={`/images/${value}`}
@@ -86,7 +86,7 @@ export default function Portfolio() {
               <motion.div
                 initial={{ opacity: 0, x: index % 2 === 0 ? 800 : -800 }}
                 whileInView={{ opacity: 1, x: index % 2 === 0 ? 400 : -400 }}
-                viewport={{ once: true }}
+                // viewport={{ once: true }}
                 transition={{ type: "tween", duration: 1 }}
                 className="w-full max-sm:hidden h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex  flex-col items-center justify-center text-justify"
               >
