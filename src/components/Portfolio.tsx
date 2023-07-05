@@ -42,10 +42,10 @@ export default function Portfolio() {
     <motion.section
       initial={{ y: 200 }}
       animate={{ y: 0 }}
-      className="max-w-[1000px] max-sm:px-4 m-auto max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-5 max-sm:justify-center"
+      className="max-w-[1000px] max-[800px]:px-4 m-auto max-[800px]:flex max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-5 max-[800px]:justify-center"
     >
       <h1
-        className={`text-[50px] sm:mb-10  max-sm:text-[40px] sm:mt-5 bg-gradient-to-r to-[#267ee2] from:60% to:50% from-[#d400ff] ${poppins.className} bg-clip-text text-transparent font-bold text-center`}
+        className={`text-[50px] min-[800px]:mb-10  max-[800px]:text-[40px] min-[800px]:mt-5 bg-gradient-to-r to-[#267ee2] from:60% to:50% from-[#d400ff] ${poppins.className} bg-clip-text text-transparent font-bold text-center`}
       >
         Portfolio
       </h1>
@@ -53,8 +53,8 @@ export default function Portfolio() {
         return (
           <motion.div
             custom={index}
-            className={`max-sm:w-auto w-[400px]  duration-1000 ${
-              index % 2 === 0 ? "" : "sm:ml-auto"
+            className={`max-[800px]:w-auto w-[400px]  duration-1000 ${
+              index % 2 === 0 ? "" : "min-[800px]:ml-auto"
             }`}
             key={index}
           >
@@ -76,9 +76,9 @@ export default function Portfolio() {
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
                 whileTap={{ opacity: 1 }}
-                className="w-full sm:hidden h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex  flex-col items-center justify-center text-justify bg-[#000000ad]"
+                className="w-full min-[800px]:hidden h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex  flex-col items-center justify-center text-justify bg-[#000000ad]"
               >
-                <h1 className="text-[#A3B3BC] max-sm:text-[14px] font-semibold">
+                <h1 className="text-[#A3B3BC] max-[800px]:text-[14px] font-semibold">
                   {arrDescriptions[index]}
                 </h1>
               </motion.div>
@@ -88,9 +88,9 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, x: index % 2 === 0 ? 400 : -400 }}
                 // viewport={{ once: true }}
                 transition={{ type: "tween", duration: 1 }}
-                className="w-full max-sm:hidden h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex  flex-col items-center justify-center text-justify"
+                className="w-full max-[800px]:hidden h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex  flex-col items-center justify-center text-justify"
               >
-                <h1 className="text-[#A3B3BC] max-sm:text-[12px] font-semibold">
+                <h1 className="text-[#A3B3BC] max-[800px]:text-[12px] font-semibold">
                   {arrDescriptions[index]}
                 </h1>
               </motion.div>
