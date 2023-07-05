@@ -42,7 +42,7 @@ export default function Portfolio() {
     <motion.section
       initial={{ y: 200 }}
       animate={{ y: 0 }}
-      className="max-w-[1000px] max-[800px]:px-4 m-auto max-[800px]:flex max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-5 max-[800px]:justify-center"
+      className="max-w-[1000px] max-[800px]:px-4 m-auto max-[800px]:flex max-[800px]:flex-col px-4 max-[800px]:items-center max-[800px]:gap-5 max-[800px]:justify-center"
     >
       <h1
         className={`text-[50px] min-[800px]:mb-10  max-[800px]:text-[40px] min-[800px]:mt-5 bg-gradient-to-r to-[#267ee2] from:60% to:50% from-[#d400ff] ${poppins.className} bg-clip-text text-transparent font-bold text-center`}
@@ -84,7 +84,7 @@ export default function Portfolio() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, x: index % 2 === 0 ? 800 : -800 }}
+                initial={{ opacity: 0, x: index % 2 === 0 ? 700 : -700 }}
                 whileInView={{ opacity: 1, x: index % 2 === 0 ? 400 : -400 }}
                 // viewport={{ once: true }}
                 transition={{ type: "tween", duration: 1 }}
