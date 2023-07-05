@@ -37,18 +37,22 @@ export default function HeaderContent() {
                 onInit={(typewriter) => {
                   typewriter
                     .start()
-                    .typeString("I'm glad you came to my portfolio")
+                    // .typeString("I'm glad you came to my portfolio")
+                    .typeString("Я рад, что вы зашли на мое портфолио")
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("My name is Danila and I'm Frontend developer")
+                    // .typeString("My name is Danila and I'm Frontend developer")
+                    .typeString("Меня зовут Данила и я Frontend разработчик")
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString(
-                      "Me 22 years old, of which I have been programming for 4 years"
-                    )
+                    // .typeString(
+                    //   "Me 22 years old, of which I have been programming for 4 years"
+                    // )
+                    .typeString("Мне 22 года, из них я программирую 4 года")
                     .pauseFor(1000)
                     .deleteAll()
-                    .typeString("Enjoy your viewing!!");
+                    // .typeString("Enjoy your viewing!!");
+                    .typeString("Приятного просмотра!!");
                 }}
               />
             </motion.h1>

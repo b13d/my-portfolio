@@ -23,12 +23,19 @@ export default function Portfolio() {
     "https://photogram-phi.vercel.app/",
   ];
 
+  // const arrDescriptions: string[] = [
+  //   "An e-commerce website where there are products and interaction with them. The application is created for users of TS, React, NextJS, Tailwindcss",
+  //   "A web application that works with the hacker news API offers access to applications using the API. The application is based on TS, React, NextJS, Tailwindcss and HackerNewsAPI",
+  //   "Web application for notes. Saving takes place locally. The application is based on TS, React, NextJS, Tailwindcss",
+  //   "LamaChat web application. Where you can correspond as in a regular messenger, you also need to register first. There are already several users in the application, for the test, you can find them by their names: danila, dima. The application is based on TS, React, NextJS, Tailwind css, Firebase (save data)",
+  //   "A web application with a phonogram. Where you publish images, before editing it, this image will be visible to everyone who has access to the application. The application is based on TS, React, NextJS, TailwindCSS, Firebase (save data)",
+  // ];
   const arrDescriptions: string[] = [
-    "An e-commerce website where there are products and interaction with them. The application is created for users of TS, React, NextJS, Tailwindcss",
-    "A web application that works with the hacker news API offers access to applications using the API. The application is based on TS, React, NextJS, Tailwindcss and HackerNewsAPI",
-    "Web application for notes. Saving takes place locally. The application is based on TS, React, NextJS, Tailwindcss",
-    "LamaChat web application. Where you can correspond as in a regular messenger, you also need to register first. There are already several users in the application, for the test, you can find them by their names: danila, dima. The application is based on TS, React, NextJS, Tailwind css, Firebase (save data)",
-    "A web application with a phonogram. Where you publish images, before editing it, this image will be visible to everyone who has access to the application. The application is based on TS, React, NextJS, TailwindCSS, Firebase (save data)",
+    "Веб-сайт электронной коммерции, на котором представлены товары и взаимодействие с ними. В приложении используются следующие технологии: TS, React, NextJS, Tailwindcss, Framer-motion",
+    "Веб-приложение, работающее с HackerNewsAPI, предлагает доступ к приложениям, использующим этот API. В приложении используются следующие технологии: TS, React, NextJS, Tailwindcss and HackerNewsAPI, Framer-motion",
+    "Веб-приложение для заметок. Сохранение происходит локально. В приложении используются следующие технологии: TS, React, NextJS, Tailwindcss, Framer-motion",
+    "Веб-приложение Lama Chat. Там, где вы можете переписываться, как в обычном мессенджере, вам также необходимо сначала зарегистрироваться. В приложении уже есть несколько пользователей, для теста вы можете найти их по именам: danila, dima. В приложении используются следующие технологии: TS, React, NextJS, Tailwind css, Firebase (save data), Framer-motion",
+    "Веб-приложение photogram. Там, где вы публикуете изображения, перед этим отредактировав изображение, данное изображение будет видно всем, у кого есть доступ к приложению. В приложении используются следующие технологии: TS, React, NextJS, TailwindCSS, Firebase (save data), Framer-motion",
   ];
 
   return (
@@ -77,7 +84,7 @@ export default function Portfolio() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0,x: index % 2 === 0 ? 800 : -800 }}
+                initial={{ opacity: 0, x: index % 2 === 0 ? 800 : -800 }}
                 whileInView={{ opacity: 1, x: index % 2 === 0 ? 400 : -400 }}
                 viewport={{ once: true }}
                 transition={{ type: "tween", duration: 1 }}
