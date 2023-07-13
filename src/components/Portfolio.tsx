@@ -68,7 +68,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, x: 0 }}
                 // viewport={{ once: true }}
                 transition={{ duration: 1 }}
-                className={`w-[400px] relative z-10 rounded-lg brightness-90 shadow-xl`}
+                className={`w-[400px] m-auto relative z-10 rounded-lg brightness-90 shadow-xl`}
                 src={`/images/${value}`}
                 alt="screen-site"
               />
