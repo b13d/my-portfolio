@@ -7,8 +7,6 @@ export default function Home() {
 
   return (
     <main className="flex bg-gradient-to-b from-[#232e3f] to-[#0d1117] min-h-screen flex-col items-center justify-between">
-
-
       <Main />
     </main>
   );

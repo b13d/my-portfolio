@@ -68,15 +68,15 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, x: 0 }}
                 // viewport={{ once: true }}
                 transition={{ duration: 1 }}
-                className={`w-[400px] rounded-lg brightness-90 shadow-xl`}
+                className={`w-[400px] relative z-10 rounded-lg brightness-90 shadow-xl`}
                 src={`/images/${value}`}
                 alt="screen-site"
               />
               <motion.div
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                whileTap={{ opacity: 1 }}
-                className="w-full min-[800px]:hidden h-[-webkit-fill-available] absolute rounded-lg top-0 p-[30px] flex  flex-col items-center justify-center text-justify bg-[#000000ad]"
+                initial={{ opacity: 0, x: -200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{duration: 1, type: "tween"}}
+                className={`w-full min-[800px]:hidden h-[-webkit-fill-available]  rounded-lg top-0 p-[30px] flex  flex-col items-center justify-center text-justify bg-[#00000023]`}
               >
                 <h1 className="text-[#A3B3BC] max-[800px]:text-[14px] font-semibold">
                   {arrDescriptions[index]}
