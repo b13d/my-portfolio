@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export default function Main() {
   return (
     <div className="w-full max-w-[1280px] overflow-hidden">
-      <Header />
+      {/* <Header /> */}
       <HeaderContent />
       <About />
       <Skills />

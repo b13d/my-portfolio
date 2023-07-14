@@ -10,7 +10,7 @@ const poppins = Poppins({ weight: "600", subsets: ["devanagari"] });
 
 export default function HeaderContent() {
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center mt-10">
       <motion.div
         initial={{ x: -1200, WebkitBorderTopLeftRadius: "6px" }}
         animate={{ x: 0, WebkitBorderTopLeftRadius: "100px" }}
@@ -48,7 +48,7 @@ export default function HeaderContent() {
                     // .typeString(
                     //   "Me 22 years old, of which I have been programming for 4 years"
                     // )
-                    .typeString("Мне 22 года, из них я программирую 4 года")
+                    .typeString("Мне 22 года, из них я программирую 2 года")
                     .pauseFor(1000)
                     .deleteAll()
                     // .typeString("Enjoy your viewing!!");
