@@ -29,7 +29,7 @@ export default function HeaderContent() {
           </h1>
           <div className="flex flex-col">
             <motion.h1
-              className={`text-[55px] max-sm:hidden max-lg:text-[26px]  leading-[50px] tracking-tighter ${poppins.className}  max-w-[500px] lg:h-[150px] text-[white] font-semibold`}
+              className={`text-[55px] max-sm:hidden max-lg:text-[26px]  leading-[50px] tracking-wider ${poppins.className}  max-w-[500px] lg:h-[150px] text-[white] font-semibold`}
             >
               <Typewriter
                 // options={{ loop: true }}
